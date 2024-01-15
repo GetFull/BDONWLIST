@@ -1,0 +1,1534 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NODE WAR</title>
+
+    <meta name="robots" content="noindex" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-900">
+    <section
+      class="text-gray-400 bg-gray-900 body-font sticky top-0 w-full border-b border-gray-800">
+      <div
+        class="flex justify-center p-4 gap-2 flex-wrap"
+        role="group"
+        data-bs-toggle="buttons">
+        <label class="text-gray-400 px-4 py-2 rounded gap-2 flex">
+          <input
+            data-toggle="t1"
+            type="checkbox"
+            class="p-4"
+            name=""
+            id=""
+            autocomplete="off"
+            checked />
+          T1
+        </label>
+        <label class="text-gray-400 px-4 py-2 rounded gap-2 flex">
+          <input
+            data-toggle="t2"
+            type="checkbox"
+            class="p-4"
+            name=""
+            id=""
+            autocomplete="off"
+            checked />
+          T2
+        </label>
+        <label class="text-gray-400 px-4 py-2 rounded gap-2 flex">
+          <input
+            data-toggle="t3"
+            type="checkbox"
+            class="p-4"
+            name=""
+            id=""
+            autocomplete="off"
+            checked />
+          T3
+        </label>
+        <label class="text-gray-400 px-4 py-2 rounded gap-2 flex">
+          <input
+            data-toggle="t4"
+            type="checkbox"
+            class="p-4"
+            name=""
+            id=""
+            autocomplete="off"
+            checked />
+          T4
+        </label>
+      </div>
+    </section>
+
+    <section class="text-gray-400 bg-gray-900 body-font">
+      <div class="container px-5 py-12 mx-auto">
+        <div class="text-center mb-20">
+          <h1 class="sm:text-3xl text-2xl font-bold title-font text-white mb-4">
+            Що не обмежує нод
+          </h1>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-green-500 inline-flex"></div>
+          </div>
+        </div>
+        <div
+          class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6 justify-center">
+          <div class="p-4 flex flex-col text-center items-center">
+            <div
+              class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-800 text-green-400 mb-5 flex-shrink-0">
+              <img
+                src="https://bdocodex.com/items/new_icon/04_pc_skill/03_buff/attackeddamage_up_all.webp" />
+            </div>
+            <div class="flex-grow">
+              <h2
+                class="text-white text-lg title-font font-medium mb-3"
+                data-tier="t1">
+                Атака
+              </h2>
+              <p class="leading-relaxed text-base">
+                Весь % дамаг від особливих атак: у спину, по низу, у повітрі,
+                крит, Швидкість атаки, Швидкість навичок
+              </p>
+              <hr class="my-4 border-gray-800" />
+              <p>
+                <span class="text-green-400" data-tier="t3 t4">
+                  HP (для нодів ранг 3+),
+                </span>
+                Висота стрибка, витривалість, Гнів Чорного Духа, Ігнорування
+                резистів, Швидкість пересування, Ухилення від облогових знарядь,
+                Відновлення НР, Відновлення HP за кожне влучання
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-gray-400 bg-gray-900 body-font">
+      <div class="container px-5 py-12 mx-auto">
+        <div class="text-center mb-20">
+          <h1 class="sm:text-3xl text-2xl font-bold title-font text-white mb-4">
+            Обмеження HP
+          </h1>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-green-500 inline-flex"></div>
+          </div>
+        </div>
+
+        <table
+          class="table-auto text-left whitespace-no-wrap w-1/3 mx-auto border border-gray-800 text-gray-400">
+          <thead
+            class="px-4 py-3 title-font tracking-wider font-medium text-white text-sm bg-gray-800 rounded">
+            <tr>
+              <th class="text-left font-semibold p-2">NODE</th>
+              <th class="text-left font-semibold p-2">MAX HP</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-800" data-tier="t1">
+              <td class="py-1">
+                <span class="font-normal px-2">T1</span>
+              </td>
+              <td class="py-1">
+                <span class="font-normal px-2">4000</span>
+              </td>
+            </tr>
+            <tr class="border-b border-gray-800" data-tier="t2">
+              <td class="py-1">
+                <span class="font-normal px-2">T2</span>
+              </td>
+              <td class="py-1">
+                <span class="font-normal px-2">5000</span>
+              </td>
+            </tr>
+            <tr class="border-b border-gray-800" data-tier="t3 t4">
+              <td class="py-1">
+                <span class="font-normal px-2">T3+</span>
+              </td>
+              <td class="py-1">
+                <span class="font-normal px-2 underline">Без обмежень</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="text-gray-400 bg-gray-900 body-font">
+      <div class="container px-5 py-12 mx-auto">
+        <div class="text-center mb-20">
+          <h1 class="sm:text-3xl text-2xl font-bold title-font text-white mb-4">
+            Обід
+          </h1>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-green-500 inline-flex"></div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap -m-2 mb-6 justify-center">
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div class="flex items-start border-gray-800 border p-4 rounded-lg">
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00009693.webp"
+                style="border: 1px solid #ff7c00" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Exquisite Cron Meal
+                </h2>
+                <ul>
+                  <li>All AP +8</li>
+                  <li>All Accuracy +15</li>
+                  <li>Attack/Casting Speed +2</li>
+                  <li>Movement Speed +2</li>
+                  <li>Critical Hit +2</li>
+                  <li>All Evasion +15</li>
+                  <li>Max HP +150</li>
+                  <li>Max Stamina +200</li>
+                  <li>Back Attack Damage +5%</li>
+                  <li>Critical Hit Damage +5%</li>
+                  <li>All Resistance +4%</li>
+                  <li>Ignore All Resistance +4%</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-tier="t1 t2">
+            <ul class="border-gray-800 border p-4 rounded-lg">
+              <h2 class="title-font font-medium text-center">
+                +5% down attack
+              </h2>
+              <li class="flex gap-2 items-center p-2 text-yellow-700">
+                <img
+                  src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00009635.webp"
+                  alt=""
+                  class="border border-yellow-700" />
+                Special Kamasylvia Meal
+              </li>
+              <li class="flex gap-2 items-center p-2 text-yellow-500">
+                <img
+                  src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00009464.webp"
+                  alt=""
+                  class="border border-yellow-500" />
+                Jumbo King of Jungle Hamburg
+              </li>
+
+              <li class="flex gap-2 items-center p-2 text-yellow-500">
+                <img
+                  src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00009637.webp"
+                  alt=""
+                  class="border border-yellow-500" />
+                Special Drieghanese Meal
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-tier="t3 t4">
+            <div class="flex items-start border-gray-800 border p-4 rounded-lg">
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00820146.webp"
+                style="border: 1px solid #ff7c00" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Miraculous Nourishing Soup
+                </h2>
+                <ul class="list-none text-gray-600 p-0">
+                  <li class="text-green-400">Макс. HP +200</li>
+                  <li class="text-green-400">Макс. витривалість +100</li>
+                  <li class="text-red-400">- Час дії: 30 хв.</li>
+                  <li class="text-red-400">- Перезарядка: 22 год.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-gray-400 bg-gray-900 body-font">
+      <div class="container px-5 py-12 mx-auto">
+        <div class="text-center mb-20">
+          <h1 class="sm:text-3xl text-2xl font-bold title-font text-white mb-4">
+            Соло алхімка
+          </h1>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 rounded bg-green-500 inline-flex text-gray-900">
+              На вибір
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap -m-2 mb-6 justify-center">
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div class="flex items-start border-gray-800 border p-4 rounded-lg">
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000793.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Giant's Draught
+                </h2>
+                <p class="text-gray-600">
+                  Вся атака +10
+                  <br />
+                  Макс. HP +150
+                  <br />
+                  <span class="text-green-400">
+                    Дод. дамаг від усіх особливих атак +10%
+                  </span>
+                  <br />
+                  Швидкість пересування +3
+                  <br />
+                  Шанс критий. удару +3
+                  <br />
+                  Макс. витривалість +200
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div class="flex items-start border-gray-800 border p-4 rounded-lg">
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000799.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">Armor Draught</h2>
+                <p class="text-gray-600">
+                  Зниження всього дамагу +15
+                  <br />
+                  Усі ухилення +10
+                  <br />
+                  Дамаг від монстрів -12%
+                  <br />
+                  <span class="text-green-400">
+                    Макс. НР +300
+                    <br />
+                    Весь опір +5%
+                    <br />
+                  </span>
+                  Вся атака -15
+                  <br />
+                  Вся влучність -15
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div class="flex items-start border-gray-800 border p-4 rounded-lg">
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000799_1.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Elixir of Indignation
+                </h2>
+
+                <ul class="text-gray-600">
+                  <li>Додат. дамаг людям +25</li>
+                  <li class="text-green-400">
+                    Дод. дамаг від усіх особливих атак +12%
+                  </li>
+                  <li>Швидкість пересування +3</li>
+                  <li>Шанс критий. удару +3</li>
+                  <li>Макс. витривалість +200</li>
+                  <li class="text-red-400">Макс. НР -150</li>
+                  <li class="text-red-400">Зниження всього дамагу -20</li>
+                  <li class="text-red-400">Все ухилення -20</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-tier="t3 t4">
+            <div class="flex items-start border-gray-800 border p-4 rounded-lg">
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/00045104.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Vitality Tonic
+                </h2>
+                <ul>
+                  <li class="text-green-400">
+                    збільшення макс. HP алхімки +100
+                  </li>
+                  - Crafting Materials: Vitality Tonic x1 Perfume of Courage,
+                  Elixir of Deep Sea, Khalk's Elixir, Spirit Perfume Elixir, or
+                  Giant's Draught x1
+                </ul>
+                <p>
+                  <span class="text-green-400">Отримання:</span>
+                  в обмін на Shining Medal of Honor (3 шт.) у гільдійних
+                  постачальників
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mb-20">
+          <h1 class="sm:text-3xl text-2xl font-bold title-font text-white mb-4">
+            Групова алхіміка
+          </h1>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-green-500 inline-flex"></div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap -m-2 justify-center">
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000636.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Elixir of Sharp Detection
+                </h2>
+                <p class="text-gray-600">Critical Hit Damage +15%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000656.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Elixir of Brutal Carnage
+                </h2>
+                <p class="text-gray-600">Down Attack Damage +15%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000634.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Elixir of Lethal Assassin
+                </h2>
+                <p class="text-gray-600">Back Attack Damage +15%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00001183.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Elixir of Lethal Destruction
+                </h2>
+                <p class="text-gray-600">Extra All Special Attack Damage +2%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000658.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Merciless Sky Elixir
+                </h2>
+                <p class="text-gray-600">Air Attack Damage +15%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000604.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Elixir of Sharp Thorn
+                </h2>
+                <p class="text-gray-600">Enemy's HP -15 when it hits you</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000650.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Grim Soul Reaper's Elixi
+                </h2>
+                <p class="text-gray-600">Recover +3 HP per hit</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000614.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Elixir of Strong Draining
+                </h2>
+                <p class="text-gray-600">Recover +5 HP per Critical Hit</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000606.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Strong Resurrection Elixir
+                </h2>
+                <p class="text-gray-600">HP Recovery +15</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000658.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Elixir of Overwhelming Endurance
+                </h2>
+                <p class="text-gray-600">Max Stamina +150</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-tier="t3 t4">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000646.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Elixir of Strong Life
+                </h2>
+                <p class="text-gray-600">Max HP +150</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000765.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Elixir of Strong Shock
+                </h2>
+                <p class="text-gray-600">Critical Hit +3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center my-20">
+          <h1 class="sm:text-3xl text-2xl font-bold title-font text-white mb-4">
+            Додаткова алхімка
+          </h1>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 rounded bg-green-500 inline-flex text-gray-900">
+              На вибір
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap -m-2 justify-center">
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-start border-gray-800 border p-4 rounded-lg relative">
+              <img
+                class="absolute bottom-0 right-0 opacity-40"
+                src="https://bdocodex.com/items/new_icon/04_pc_skill/03_buff/attackeddamage_up_all.webp" />
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000771.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Elixir of Deep Sea
+                </h2>
+                <p class="text-gray-600">
+                  All attack +10
+                  <br />
+                  <span class="text-green-400">
+                    Max. stamina +100
+                    <br />
+                    Max. HP +100
+                    <br />
+
+                    Damage from back attacks +10%
+                    <br />
+                    Down attack damage +10%
+                    <br />
+                    Air attack damage +10%
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-tier="t4">
+            <div
+              class="h-full flex items-start border-gray-800 border p-4 rounded-lg relative">
+              <img
+                class="absolute bottom-0 right-0 opacity-40"
+                src="https://bdocodex.com/items/new_icon/04_pc_skill/03_buff/defenceup.webp" />
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00001161.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Perfume of Charm
+                </h2>
+                <p class="text-gray-600">
+                  All Evasion +15
+                  <br />
+                  <span class="text-green-400">
+                    Max HP +200
+                    <br />
+                    Special Attack Evasion Rate +10%
+                  </span>
+                  <br />
+                  <span class="text-red-400">
+                    *Використовувати тільки якщо кап з "Special Attack Evasion
+                    Rate" не взято.
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-start border-gray-800 border p-4 rounded-lg relative">
+              <img
+                class="absolute bottom-0 right-0 opacity-40"
+                src="https://bdocodex.com/items/new_icon/04_pc_skill/03_buff/resistance_allup.webp" />
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000748.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Khalk's Elixir
+                </h2>
+                <p class="text-gray-600">
+                  <span class="text-green-400">All resistance +10%</span>
+                  <br />
+                  Damage reduction +15
+                  <br />
+                  <span class="text-green-400">Max. HP +100</span>
+                  <br />
+                  <span class="text-green-400">Movement speed +5%</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-tier="t3 t4">
+            <div
+              class="h-full flex items-start border-gray-800 border p-4 rounded-lg relative">
+              <img
+                class="absolute bottom-0 right-0 opacity-40"
+                src="https://bdocodex.com/items/new_icon/04_pc_skill/03_buff/resistance_allup.webp" />
+              <img
+                alt="team"
+                class="object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000781.webp" />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Spirit Perfume Elixir
+                </h2>
+                <p class="text-gray-600">
+                  <span class="text-green-400">Max. HP +300</span>
+                  <br />
+                  Crit chance hit +5
+                  <br />
+                  On each hit MP/FP/DP +3
+                  <br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-gray-400 bg-gray-900 body-font">
+      <div class="container px-5 py-12 mx-auto">
+        <div class="text-center mb-20">
+          <h1 class="sm:text-3xl text-2xl font-bold title-font text-white mb-4">
+            Artifact & Lightstone
+          </h1>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-green-500 inline-flex"></div>
+          </div>
+        </div>
+        <div class="p-2 gap-2 mx-auto">
+          <p class="text-center mb-4">
+            Для облог з порізками підходять тільки Artifact
+            <span class="text-green-400">Kehelle's</span>
+          </p>
+
+          <div class="max-w-96 mx-auto p-2">
+            <span class="flex items-center gap-2 copy">
+              <img
+                src="https://bdocodex.com/items/new_icon/06_pc_equipitem/00_common/00_etc/00735203.webp"
+                alt="" />
+              Kehelle's Artifact - Black Spirit's Rage Max Increase
+            </span>
+            <span class="flex items-center gap-2 copy">
+              <img
+                src="https://bdocodex.com/items/new_icon/06_pc_equipitem/00_common/00_etc/00735203.webp"
+                alt="" />
+              Kehelle's Artifact - Max Stamina
+            </span>
+            <span class="flex items-center gap-2 copy">
+              <img
+                src="https://bdocodex.com/items/new_icon/06_pc_equipitem/00_common/00_etc/00735203.webp"
+                alt="" />
+              Kehelle's Artifact - Max HP
+            </span>
+          </div>
+        </div>
+        <div class="flex flex-wrap -m-2 justify-center">
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-start border-gray-800 border p-4 rounded-lg">
+              <div class="flex-grow">
+                <h2 class="title-font font-medium text-center">Під кип</h2>
+                <img
+                  src="https://cdn.discordapp.com/attachments/789813050352861215/1171386322284445716/image.png?ex=655c7d86&is=654a0886&hm=c299609ef25defaca7e3ce500fb398d019f5ae98f1e170e900ea26aff3c73834&"
+                  alt=""
+                  class="mx-auto my-6" />
+                <p>
+                  <span class="text-red-400 block">Damage Reduction: -50</span>
+                  <span class="text-green-400">
+                    Siege Weapon Evasion Rate: +30
+                  </span>
+                  Knockback/Floating Resistance: +2 % Knockdown/Bound
+                  Resistance: +2 % Stun/Stiffness/Freezing Resistance: +2 %
+                  MP/WP/SP: +50
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-start border-gray-800 border p-4 rounded-lg">
+              <div class="flex-grow">
+                <h2 class="title-font font-medium text-center">Критин</h2>
+                <img
+                  src="https://cdn.discordapp.com/attachments/789813050352861215/1171385918888886333/image.png?ex=655c7d26&is=654a0826&hm=86d124d159600120699a131c30a16080732842936af1a1389d4df25cc9ad5937&"
+                  alt=""
+                  class="mx-auto my-6" />
+                <p>
+                  Hidden AP: +10 All Accuracy: +16 Stamina: +100
+                  <span class="text-green-400">Critical Hit Damage: +6 %</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-start border-gray-800 border p-4 rounded-lg">
+              <div class="flex-grow">
+                <h2 class="title-font font-medium text-center">Замало</h2>
+                <img
+                  src="https://cdn.discordapp.com/attachments/789813050352861215/1171387140890972170/image.png?ex=655c7e49&is=654a0949&hm=d55a9a03830f076c97468dc1b26ddc0abbc8921f1ee2503e9cb141fcae22e176&"
+                  alt=""
+                  class="mx-auto my-6" />
+                <p>
+                  Extra AP Against Monsters: +16
+                  <span class="text-green-400">Critical Hit Chance: +14 %</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-tier="t3 t4">
+            <div
+              class="h-full flex items-start border-gray-800 border p-4 rounded-lg">
+              <div class="flex-grow">
+                <h2 class="title-font font-medium text-center">HP</h2>
+                <img
+                  src="https://cdn.discordapp.com/attachments/789813050352861215/1171388026467917884/image.png?ex=655c7f1c&is=654a0a1c&hm=1602c159e200cfc883749ba6232c30724fee7dc57c0d18768c90c9a032dc4677&"
+                  alt=""
+                  class="mx-auto my-6" />
+                <p>
+                  <span class="text-green-400">Health Points: +450</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-gray-400 bg-gray-900 body-font">
+      <div class="container px-5 py-12 mx-auto flex flex-wrap">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1 class="sm:text-3xl text-2xl font-bold title-font text-white mb-4">
+            Алхімічні камені
+          </h1>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-green-500 inline-flex"></div>
+          </div>
+        </div>
+        <div class="flex flex-wrap w-full justify-center">
+          <div class="p-4">
+            <div class="flex rounded-lg bg-gray-800 bg-opacity-60 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <img
+                  src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00045298.webp" />
+                <h2 class="text-white text-lg title-font font-medium">
+                  Destruction Spirit Stone
+                </h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  All attack +6
+                  <br />
+                  All accuracy +8
+                  <br />
+                  <span class="text-green-400">
+                    Attack speed +4%
+                    <br />
+                    Skill Speed +4%
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4">
+            <div class="flex rounded-lg bg-gray-800 bg-opacity-60 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <img
+                  src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00045332.webp" />
+
+                <h2 class="text-white text-lg title-font font-medium">
+                  Vell's Heart
+                </h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  Attacks 3~3
+                  <br />
+                  All attack +8
+                  <br />
+                  All accuracy +10
+                  <br />
+                  <span class="text-green-400">
+                    Ignore Resistance +5%
+                    <br />
+                    Attack speed +5%
+                    <br />
+                    Skill Speed +5%
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex rounded-lg bg-gray-800 bg-opacity-60 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <img
+                  src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00045224.webp" />
+                <h2 class="text-white text-lg title-font font-medium w-52">
+                  Resplendent Alchemy Stone of Destruction
+                </h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  All attack +10
+                  <br />
+                  All accuracy +12
+                  <br />
+                  <span class="text-green-400">
+                    Ignore Resistance +6%
+                    <br />
+
+                    Attack speed +6%
+                    <br />
+                    Skill Speed +6%
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4">
+            <div class="flex rounded-lg bg-gray-800 bg-opacity-60 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <img
+                  src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00045338.webp" />
+                <h2 class="text-white text-lg title-font font-medium w-52">
+                  Splendid Spirit Stone of Destruction
+                </h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  All attack +13
+                  <br />
+                  All accuracy +14
+                  <br />
+                  <span class="text-green-400">
+                    Ignore Resistance +8%
+                    <br />
+
+                    Attack speed +8%
+                    <br />
+                    Skill Speed +8%
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4">
+            <div class="flex rounded-lg bg-gray-800 bg-opacity-60 p-8 flex-col">
+              <div class="flex items-center mb-3 gap-2">
+                <img
+                  src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00045354.webp" />
+                <h2 class="text-white text-lg title-font font-medium">
+                  Perilla's Star
+                </h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  Defense: 1
+                  <br />
+                  Damage from monsters -5%
+                  <br />
+                  All damage reduction +4
+                  <br />
+                  <span class="text-green-400">
+                    Recovery +1 HP for each hit
+                    <br />
+                    All resistance +5%
+                    <br />
+                    Movement speed +5%
+                    <br />
+                    Max. HP +200
+                    <br />
+                    Max. stamina +100
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="grid bg-gray-900 justify-center xl:grid-cols-2 max-w-screen-2xl mx-auto">
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-12 mx-auto">
+          <div class="text-center mb-20">
+            <h1
+              class="sm:text-3xl text-2xl font-bold title-font text-white mb-4">
+              Базовий набір кристалів
+            </h1>
+            <div class="flex mt-6 justify-center">
+              <div class="w-16 h-1 rounded-full bg-green-500 inline-flex"></div>
+            </div>
+          </div>
+          <div class="flex flex-wrap -m-2 justify-center">
+            <div class="p-2" data-tier="t2">
+              <div
+                class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                <div class="flex-grow">
+                  <h2 class="text-white font-medium text-center">T2</h2>
+                  <img
+                    src="https://cdn.discordapp.com/attachments/789813050352861215/1196365580987547678/image.png?ex=65b75d45&is=65a4e845&hm=f134b7c71e1ff86a050aebbe821b97a142e0db66957b2878a12761505f4c1c01&"
+                    alt=""
+                    class="mx-auto my-6" />
+                </div>
+              </div>
+            </div>
+
+            <div class="p-2" data-tier="t3">
+              <div
+                class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                <div class="flex-grow">
+                  <h2
+                    class="text-white title-font font-medium text-center"></h2>
+                  <img
+                    src="https://cdn.discordapp.com/attachments/789813050352861215/1171392878866599967/image.png?ex=655c83a1&is=654a0ea1&hm=7da8a495fc0dfe06f3b55d25498e8696c19b5b9d3aca5397cfcf1b12208cf449&"
+                    alt=""
+                    class="mx-auto my-6" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-12 mx-auto">
+          <div class="text-center mb-20">
+            <h1
+              class="sm:text-3xl text-2xl font-bold title-font text-white mb-4">
+              Покращення для кілець
+            </h1>
+
+            <div class="flex mt-6 justify-center">
+              <div class="w-16 h-1 rounded-full bg-green-500 inline-flex"></div>
+            </div>
+          </div>
+          <div
+            class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+            <div
+              class="h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded text-green-400 bg-gray-800 flex-shrink-0 border-2 border-yellow-800">
+              <img
+                src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00008149.webp" />
+            </div>
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 class="text-white text-lg title-font font-medium mb-2">
+                Cup of Dwindling Starlight
+              </h2>
+              <p class="leading-relaxed text-base text-yellow-500">
+                ※ Critical Hit Damage +3%
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col"
+            data-tier="t3 t4">
+            <div
+              class="h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded text-green-400 bg-gray-800 flex-shrink-0 border-2 border-yellow-800">
+              <img
+                src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00008148.webp" />
+            </div>
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 class="text-white text-lg title-font font-medium mb-2">
+                Cup of a Lonely Cloud
+              </h2>
+              <p class="leading-relaxed text-base text-blue-400">
+                ※ Max HP +125
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-12 mx-auto">
+          <div class="text-center mb-20">
+            <h1
+              class="sm:text-3xl text-2xl font-bold title-font text-white mb-4">
+              Біжутерія для облог
+            </h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+              Продається у NPC
+              <span class="text-green-400">Mandolf</span>
+              "Торговець обладунками" в селі Trent
+            </p>
+            <div class="flex mt-6 justify-center">
+              <div class="w-16 h-1 rounded-full bg-green-500 inline-flex"></div>
+            </div>
+          </div>
+          <div
+            class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+            <div
+              class="h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded text-green-400 bg-gray-800 flex-shrink-0 border-2 border-yellow-800">
+              <img
+                src="https://bdocodex.com/items/new_icon/06_pc_equipitem/00_common/17_earring/00011840.webp" />
+            </div>
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 class="text-white text-lg title-font font-medium mb-2">
+                Chimera's Pupil Gem
+              </h2>
+              <p class="leading-relaxed text-base">
+                Max MP/WP/SP +15 Down Attack Extra Damage +10%
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+            <div
+              class="h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded text-green-400 bg-gray-800 flex-shrink-0 border-2 border-yellow-800">
+              <img
+                src="https://bdocodex.com/items/new_icon/06_pc_equipitem/00_common/15_necklace/00011642.webp" />
+            </div>
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 class="text-white text-lg title-font font-medium mb-2">
+                Kaia Necklace
+              </h2>
+              <p class="leading-relaxed text-base">
+                Back Attack Extra Damage +10%
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-12 mx-auto flex flex-wrap">
+          <div class="text-center mb-20 w-full">
+            <h1
+              class="sm:text-3xl text-2xl font-bold title-font text-white mb-4">
+              Skill Add-on
+            </h1>
+            <div class="flex mt-6 justify-center">
+              <div class="w-16 h-1 rounded-full bg-green-500 inline-flex"></div>
+            </div>
+          </div>
+          <div class="flex flex-wrap w-full justify-center">
+            <div class="p-4">
+              <div
+                class="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
+                <img
+                  src="https://bdocodex.com/items/new_icon/06_pc_equipitem/00_common/00_etc/00000000_skillpoint.webp"
+                  class="mx-auto"
+                  alt="" />
+                <div class="flex items-center mb-3">
+                  <h2
+                    class="text-white text-lg title-font font-medium text-center w-full"></h2>
+                </div>
+                <div class="flex-grow">
+                  <ul class="list-decimal">
+                    <li>Critical damage +% / damage to the back / down...</li>
+                    <li>Crit chance</li>
+                    <li>Attack and skill speed</li>
+                    <li>Bleeding Damage per sec</li>
+                    <li>All accuracy +%</li>
+                    <li>All enemy Evasion -%</li>
+                    <li>Instantly recovery HP per hit</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-12 mx-auto">
+          <div class="text-center mb-20 w-full">
+            <h1
+              class="sm:text-3xl text-2xl font-bold title-font text-white mb-4">
+              ДІМ
+            </h1>
+            <div class="flex mt-6 justify-center">
+              <div class="w-16 h-1 rounded-full bg-green-500 inline-flex"></div>
+            </div>
+          </div>
+
+          <div
+            data-tier="t1 t2"
+            class="flex items-center mx-auto lg:w-3/5 pb-10 mb-10 sm:flex-row flex-col">
+            <div
+              class="h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded text-green-400 bg-gray-800 flex-shrink-0 border-2 border-blue-800">
+              <img
+                class="w-12"
+                src="https://bdocodex.com/items/new_icon/03_etc/06_housing/inhouse_z_booty_boss_troll_02.webp" />
+            </div>
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 class="text-white text-lg title-font font-medium mb-2">
+                Quint Statue
+              </h2>
+              <p class="leading-relaxed text-base">
+                відновлення HP +50 на 1 годину
+              </p>
+            </div>
+          </div>
+
+          <div
+            data-tier="t3 t4"
+            class="flex items-center mx-auto lg:w-3/5 mb-10 sm:flex-row flex-col">
+            <div
+              class="h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded text-green-400 bg-gray-800 flex-shrink-0 border-2 border-yellow-300">
+              <img
+                class="w-12"
+                src="https://bdocodex.com/items/new_icon/03_etc/06_housing/inhouse_z_booty_blacknesswolfhead_01.webp" />
+            </div>
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 class="text-white text-lg title-font font-medium mb-2">
+                Master's Special Stuffed Shadow Wolf Head
+              </h2>
+              <p class="leading-relaxed text-base">
+                Max HP +100 на 3 години або 1 годину
+              </p>
+            </div>
+          </div>
+
+          <div
+            data-tier="t1 t2"
+            class="flex items-center mx-auto lg:w-3/5 sm:flex-row flex-col">
+            <div
+              class="h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded text-green-400 bg-gray-800 flex-shrink-0 border-2 border-blue-800">
+              <img
+                class="w-12"
+                src="https://bdocodex.com/items/new_icon/03_etc/06_housing/inhouse_z_booty_boss_calk_01.webp" />
+            </div>
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 class="text-white text-lg title-font font-medium mb-2">
+                Khalk's Wings
+              </h2>
+              <p class="leading-relaxed text-base">
+                MAX Стаміна +200 на 2 години
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-12 mx-auto">
+          <div class="text-center mb-20">
+            <h1
+              class="sm:text-3xl text-2xl font-bold title-font text-white mb-4">
+              Транспорт
+            </h1>
+            <div class="flex mt-6 justify-center">
+              <div class="w-16 h-1 rounded-full bg-green-500 inline-flex"></div>
+            </div>
+          </div>
+
+          <div class="flex items-center mx-auto mb-10 sm:flex-row flex-col">
+            <div
+              class="h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded text-green-400 bg-gray-800 flex-shrink-0 border-2 border-yellow-300">
+              <img
+                class="w-12"
+                src="https://bdocodex.com/items/new_ui_common_forlua/window/stable/horse_88.webp" />
+            </div>
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 class="text-white text-lg title-font font-medium mb-2">
+                Dream Diné (єдиноріг)
+              </h2>
+              <p class="leading-relaxed text-base">
+                Відновлює +300 HP/MP/FP/DP персонажа і союзників поруч (макс. 10
+                осіб) кожні 3 сек протягом 60 сек
+              </p>
+              <p class="leading-relaxed text-base">
+                можливість нормально пересуватися пустелею
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex items-center mx-auto mb-10 sm:flex-row flex-col"
+            data-tier="t3 t4">
+            <div
+              class="h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded text-green-400 bg-gray-800 flex-shrink-0 border-2 border-yellow-300">
+              <img
+                class="w-12"
+                src="https://bdocodex.com/items/new_icon/03_etc/09_petitem/00052615.webp" />
+            </div>
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 class="text-white text-lg title-font font-medium mb-2">
+                Krogdalo's - Sea
+              </h2>
+              <p class="leading-relaxed text-base">
+                Ефект набору (5 предметів): Макс. HP і макс. витривалість гравця
+                і 9 союзників у радіусі 10 м +100 протягом 60 хв.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden hidden">
+      <div class="container px-5 py-12 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1
+            class="sm:text-3xl text-2xl font-bold title-font text-white mb-4 font">
+            ГИР
+          </h1>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-green-500 inline-flex"></div>
+          </div>
+        </div>
+        <div class="mx-auto flex gap-10 flex-wrap justify-center">
+          <div data-tier="t3">
+            <h2 class="text-center mb-10 font-bold text-white">
+              Минимальный гир для осад 3-ранга
+            </h2>
+            <img
+              alt="ecommerce"
+              class="object-cover object-center"
+              src="https://cdn.discordapp.com/attachments/786601385939828759/1154370233113514024/image.png" />
+          </div>
+          <div data-tier="t1">
+            <h2 class="text-center mb-10 font-bold">гир для T1-2</h2>
+            <img
+              alt="ecommerce"
+              class="object-cover object-center"
+              src="https://cdn.discordapp.com/attachments/789813050352861215/1157758269352316999/30757bc76710eb07.png?ex=6519c5e9&is=65187469&hm=b4458624d3920c77be165ee0a91462015dd3fd7bda1e149e630a366a236e3f93&" />
+          </div>
+          <div data-tier="t3">
+            <h2 class="text-center mb-10 font-bold">
+              Минимальный комфортный гир для осад 3-ранга
+            </h2>
+            <img
+              alt="ecommerce"
+              class="object-cover object-center"
+              src="https://cdn.discordapp.com/attachments/786601385939828759/1154376707168555018/image.png" />
+          </div>
+
+          <div data-tier="t3">
+            <h2 class="text-center mb-10 font-bold">
+              Комфортный гир для 3-4 ранга
+            </h2>
+            <img
+              alt="ecommerce"
+              class="object-cover object-center"
+              src="https://cdn.discordapp.com/attachments/789813050352861215/1156131468339322941/58c3b08d8770b731.png?ex=6513dad5&is=65128955&hm=cfc9212818491f433f26200f1d14493a2b3c295d239cd1254f3298291245331c&" />
+          </div>
+
+          <div>
+            <h2 class="text-center mb-10 font-bold">
+              Забаф к которому стоит стремится
+            </h2>
+            <img
+              alt="ecommerce"
+              class="object-cover object-center"
+              src="https://cdn.discordapp.com/attachments/789813050352861215/1156893190180307045/canvas.png?ex=6516a03e&is=65154ebe&hm=8a96a89346d4d24e049e48152c13c6814473827ae9bd07a446ed6c434c55887d&" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="text-gray-400 bg-gray-900 body-font overflow-hidden"
+      id="total">
+      <div class="container px-5 py-12 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1 class="sm:text-3xl text-2xl font-bold title-font text-white mb-4">
+            Що взяти на облогу?
+          </h1>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-green-500 inline-flex"></div>
+          </div>
+        </div>
+        <div class="mx-auto flex flex-wrap">
+          <ul class="list-none flex flex-wrap gap-4 justify-center w-full">
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap">
+              Банки на HP/MP
+              <img
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000529.webp"
+                alt="" />
+              <img
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000532.webp"
+                alt="" />
+              <img
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00040712.webp"
+                alt="" />
+              <img
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00040713.webp"
+                alt="" />
+              <img
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00001043.webp"
+                alt="" />
+            </li>
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap">
+              Обіди
+              <img
+                src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00009693.webp"
+                alt="" />
+              <img
+                src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00009692.webp"
+                alt="" />
+            </li>
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap">
+              Алхімка
+              <img
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000793.webp"
+                alt="" />
+              <img
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000771.webp"
+                alt="" />
+              <img
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000636.webp"
+                alt="" />
+            </li>
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap">
+              Карта
+              <img
+                src="https://bdocodex.com/items/new_icon/03_etc/00016017.webp"
+                alt="" />
+            </li>
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap">
+              Polished Stone
+              <img
+                src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00004068.webp"
+                alt="" />
+            </li>
+
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap hidden">
+              Порошок чёрного камня
+              <img
+                src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00004901.webp"
+                alt="" />
+              <span class="text-gray-500">(субботняя осада только)</span>
+            </li>
+
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap">
+              Whale Tendon Potion
+              <img
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000576.webp"
+                alt="" />
+              <img
+                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000575.webp"
+                alt="" />
+            </li>
+
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap">
+              Пастки
+              <img
+                src="https://bdocodex.com/items/new_icon/06_pc_equipitem/00_common/00_etc/00000202.webp"
+                alt="" />
+            </li>
+
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap">
+              Trina Demolition Axe IV+
+              <img
+                src="https://bdocodex.com/items/new_icon/06_pc_equipitem/00_common/00_etc/00016433.webp"
+                alt="" />
+            </li>
+
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap">
+              Компас для облог на території пустелі Валенсії
+              <img
+                src="https://bdocodex.com/items/new_icon/03_etc/00016012.webp"
+                alt="" />
+            </li>
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap">
+              [Loyalty] Tears of the Wind
+              <img
+                src="https://bdocodex.com/items/new_icon/09_cash/00017584.webp"
+                alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script>
+      const copiedTitle = document.querySelectorAll(
+        'h2.text-white.title-font.font-medium, .copy'
+      );
+
+      copiedTitle.forEach((item) => {
+        item.classList.add('cursor-pointer');
+        item.addEventListener('click', async () => {
+          try {
+            // Копируем текст в буфер обмена
+            await navigator.clipboard.writeText(item.textContent.trim());
+            item.classList.toggle('text-green-500');
+            // Можно также добавить обратную связь, например, вывести сообщение об успешном копировании
+            console.log('Текст скопирован: ' + item.textContent);
+          } catch (err) {
+            // В случае ошибки выводим сообщение или обрабатываем ошибку
+            console.error('Не удалось скопировать текст: ', err);
+          }
+        });
+      });
+
+      const toggleButtons = document.querySelectorAll('[data-toggle]');
+
+      function toggleElements(event) {
+        const { toggle } = event.target.dataset;
+
+        let elementsToToggle = document.querySelectorAll(`[data-tier]`);
+
+        elementsToToggle.forEach((element) => {
+          const elementAtr = element.getAttribute('data-tier').split(' ');
+          console.log(elementAtr);
+
+          const result = elementAtr.reduce(
+            (accumulator, currentValue) =>
+              accumulator +
+              document.querySelector(`[data-toggle="${currentValue}"`).checked,
+            0
+          );
+          console.log(result);
+
+          result
+            ? element.classList.remove('hidden')
+            : element.classList.add('hidden');
+        });
+      }
+
+      toggleButtons.forEach((button) => {
+        button.addEventListener('click', toggleElements);
+      });
+    </script>
+  </body>
+</html>
