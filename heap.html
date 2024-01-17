@@ -17,23 +17,13 @@
         alt="" />
     </section>
 
-    <section class="text-gray-400 bg-gray-900 body-font">
+    <section
+      class="text-gray-400 bg-gray-900 body-font sticky top-0 w-full border-b border-gray-800 z-10">
       <div
-        class="flex justify-center p-4 gap-2"
+        class="flex justify-center p-4 gap-2 flex-wrap"
         role="group"
         data-bs-toggle="buttons">
-        <label class="text-gray-400 px-4 py-2 rounded gap-2 flex opacity-10">
-          <input
-            data-toggle="siege"
-            type="checkbox"
-            class="p-4"
-            name=""
-            id=""
-            autocomplete="off"
-            checked />
-          Siege
-        </label>
-        <label class="text-gray-400 px-4 py-2 rounded gap-2 flex opacity-10">
+        <label class="text-gray-400 px-4 py-2 rounded gap-2 flex">
           <input
             data-toggle="t1"
             type="checkbox"
@@ -44,7 +34,7 @@
             checked />
           T1
         </label>
-        <label class="text-gray-400 px-4 py-2 rounded gap-2 flex opacity-10">
+        <label class="text-gray-400 px-4 py-2 rounded gap-2 flex">
           <input
             data-toggle="t2"
             type="checkbox"
@@ -55,7 +45,7 @@
             checked />
           T2
         </label>
-        <label class="text-gray-400 px-4 py-2 rounded gap-2 flex opacity-10">
+        <label class="text-gray-400 px-4 py-2 rounded gap-2 flex">
           <input
             data-toggle="t3"
             type="checkbox"
@@ -66,7 +56,7 @@
             checked />
           T3
         </label>
-        <label class="text-gray-400 px-4 py-2 rounded gap-2 flex opacity-10">
+        <label class="text-gray-400 px-4 py-2 rounded gap-2 flex">
           <input
             data-toggle="t4"
             type="checkbox"
@@ -80,7 +70,7 @@
       </div>
     </section>
 
-    <section class="text-gray-400 bg-gray-900 body-font" data-type="t1">
+    <section class="text-gray-400 bg-gray-900 body-font" data-tier="t1">
       <div class="container px-5 py-12 mx-auto">
         <div class="text-center mb-20">
           <h1 class="sm:text-3xl text-2xl font-bold title-font text-white mb-4">
@@ -108,7 +98,7 @@
               </p>
               <hr class="my-4 border-gray-800" />
               <p>
-                <span class="text-green-400" data-type="t3">
+                <span class="text-green-400" data-tier="t3">
                   HP (для узлов ранг 3+),
                 </span>
                 Высота прыжка, выносливость, Гнев Чёрного Духа, Игнорирование
@@ -121,7 +111,7 @@
       </div>
     </section>
 
-    <section class="text-gray-400 bg-gray-900 body-font" data-type="t1">
+    <section class="text-gray-400 bg-gray-900 body-font">
       <div class="container px-5 py-12 mx-auto">
         <div class="text-center mb-20">
           <h1 class="sm:text-3xl text-2xl font-bold title-font text-white mb-4">
@@ -137,57 +127,33 @@
           <thead
             class="px-4 py-3 title-font tracking-wider font-medium text-white text-sm bg-gray-800 rounded">
             <tr>
-              <th class="text-left font-semibold p-2">Время</th>
+              <th class="text-left font-semibold p-2">NODE</th>
               <th class="text-left font-semibold p-2">MAX HP</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="border-b border-gray-800">
+            <tr class="border-b border-gray-800" data-tier="t1">
               <td class="py-1">
-                <span class="font-normal px-2">20:00 – 20:20</span>
-              </td>
-              <td class="py-1">
-                <span class="font-normal px-2">5000</span>
-              </td>
-            </tr>
-            <tr class="border-b border-gray-800">
-              <td class="py-1">
-                <span class="font-normal px-2">20:20 – 20:40</span>
-              </td>
-              <td class="py-1">
-                <span class="font-normal px-2">4500</span>
-              </td>
-            </tr>
-            <tr class="border-b border-gray-800">
-              <td class="py-1">
-                <span class="font-normal px-2">20:40 – 21:00</span>
+                <span class="font-normal px-2">T1</span>
               </td>
               <td class="py-1">
                 <span class="font-normal px-2">4000</span>
               </td>
             </tr>
-            <tr class="border-b border-gray-800">
+            <tr class="border-b border-gray-800" data-tier="t2">
               <td class="py-1">
-                <span class="font-normal px-2">21:00 – 21:20</span>
+                <span class="font-normal px-2">T2</span>
               </td>
               <td class="py-1">
-                <span class="font-normal px-2">3500</span>
-              </td>
-            </tr>
-            <tr class="border-b border-gray-800">
-              <td class="py-1">
-                <span class="font-normal px-2">21:20 – 21:40</span>
-              </td>
-              <td class="py-1">
-                <span class="font-normal px-2">3000</span>
+                <span class="font-normal px-2">5000</span>
               </td>
             </tr>
-            <tr class="border-b border-gray-800">
+            <tr class="border-b border-gray-800" data-tier="t3 t4">
               <td class="py-1">
-                <span class="font-normal px-2">21:40 – 22:00</span>
+                <span class="font-normal px-2">T3+</span>
               </td>
               <td class="py-1">
-                <span class="font-normal px-2">2500</span>
+                <span class="font-normal px-2">-</span>
               </td>
             </tr>
           </tbody>
@@ -236,7 +202,7 @@
             </div>
           </div>
 
-          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-type="siege">
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-tier="t3 t4">
             <div class="flex items-start border-gray-800 border p-4 rounded-lg">
               <img
                 alt="team"
@@ -271,17 +237,19 @@
           </div>
         </div>
 
-        <div class="flex flex-wrap -m-2 mb-6 justify-center gap-4">
+        <div
+          class="flex flex-wrap -m-2 mb-6 justify-center gap-4"
+          data-tier="t1 t2">
           <div class="p-4 border border-gray-800 rounded lg:w-1/3">
             <ul>
-              <li class="flex gap-2 items-center p-2 text-yellow-700">
+              <li class="flex gap-2 items-center p-2 text-yellow-700 copy">
                 <img
                   src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00009635.webp"
                   alt=""
                   class="border border-yellow-700" />
                 Особый камасильвийский обед
               </li>
-              <li class="flex gap-2 items-center p-2 text-yellow-500">
+              <li class="flex gap-2 items-center p-2 text-yellow-500 copy">
                 <img
                   src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00009464.webp"
                   alt=""
@@ -289,7 +257,7 @@
                 Большой гамбургер «Король джунглей»
               </li>
 
-              <li class="flex gap-2 items-center p-2 text-yellow-500">
+              <li class="flex gap-2 items-center p-2 text-yellow-500 copy">
                 <img
                   src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00009637.webp"
                   alt=""
@@ -302,7 +270,8 @@
                     src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00009313.webp"
                     alt=""
                     class="border border-green-400" />
-                  Эликсир ветров (если скорость атаки не 5)
+                  <div class="copy">Эликсир ветров</div>
+                  (если скорость атаки не 5)
                 </div>
               </li>
 
@@ -319,7 +288,7 @@
             </ul>
           </div>
 
-          <div class="">
+          <div class="" data-tier="t1 t2">
             <div class="p-4 border border-gray-800 rounded">
               <p>
                 <span class="text-green-400 block text-center">
@@ -441,7 +410,7 @@
             </div>
           </div>
 
-          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-type="siege">
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-tier="t4 t3">
             <div class="flex items-start border-gray-800 border p-4 rounded-lg">
               <img
                 alt="team"
@@ -551,7 +520,7 @@
                 class="object-cover object-center flex-shrink-0 rounded-full mr-4"
                 src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000658.webp" />
               <div class="flex-grow">
-                <h2 class="text-gray-500 title-font font-medium">
+                <h2 class="text-gray-500 title-font font-medium copy">
                   Особое зелье неба
                 </h2>
                 <p class="text-gray-600">Доп. урон при атаке в воздухе: +15%</p>
@@ -619,7 +588,7 @@
                 class="object-cover object-center flex-shrink-0 rounded-full mr-4"
                 src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000606.webp" />
               <div class="flex-grow">
-                <h2 class="text-gray-500 title-font font-medium">
+                <h2 class="text-gray-500 title-font font-medium copy">
                   Сильное зелье регенерации
                 </h2>
                 <p class="text-gray-600">Восстановление HP +15</p>
@@ -635,7 +604,7 @@
                 class="object-cover object-center flex-shrink-0 rounded-full mr-4"
                 src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000658.webp" />
               <div class="flex-grow">
-                <h2 class="title-font font-medium text-gray-500">
+                <h2 class="title-font font-medium text-gray-500 copy">
                   Особое зелье энергии
                 </h2>
                 <p class="text-gray-600">Макс. выносливость +150</p>
@@ -643,7 +612,7 @@
             </div>
           </div>
 
-          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-tier="t3 t4">
             <div
               class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
               <img
@@ -721,7 +690,7 @@
             </div>
           </div>
 
-          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-tier="t4">
             <div
               class="h-full flex items-start border-gray-800 border p-4 rounded-lg relative">
               <img
@@ -751,7 +720,7 @@
             </div>
           </div>
 
-          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-tier="t3 t4">
             <div
               class="h-full flex items-start border-gray-800 border p-4 rounded-lg relative">
               <img
@@ -776,7 +745,7 @@
             </div>
           </div>
 
-          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-type="siege">
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-tier="t3 t4">
             <div
               class="h-full flex items-start border-gray-800 border p-4 rounded-lg relative">
               <img
@@ -821,20 +790,20 @@
             <span class="text-green-400">Кехелль</span>
           </p>
 
-          <div class="w-96 mx-auto p-2">
-            <span class="flex items-center gap-2">
+          <div class="m-w-96 mx-auto p-2">
+            <span class="flex items-center gap-2 copy">
               <img
                 src="https://bdocodex.com/items/new_icon/06_pc_equipitem/00_common/00_etc/00735203.webp"
                 alt="" />
               Реликвия Кехелль — увеличение макс. показателя Гнева Черного духа
             </span>
-            <span class="flex items-center gap-2">
+            <span class="flex items-center gap-2 copy">
               <img
                 src="https://bdocodex.com/items/new_icon/06_pc_equipitem/00_common/00_etc/00735203.webp"
                 alt="" />
               Реликвия Кехелль — макс. выносливость
             </span>
-            <span class="flex items-center gap-2" data-type="siege">
+            <span class="flex items-center gap-2 copy">
               <img
                 src="https://bdocodex.com/items/new_icon/06_pc_equipitem/00_common/00_etc/00735203.webp"
                 alt="" />
@@ -847,9 +816,7 @@
             <div
               class="h-full flex items-start border-gray-800 border p-4 rounded-lg">
               <div class="flex-grow">
-                <h2 class="text-white title-font font-medium text-center">
-                  Под кип
-                </h2>
+                <h2 class="title-font font-medium text-center">Под кип</h2>
                 <img
                   src="https://cdn.discordapp.com/attachments/786601385939828759/1146360218545045564/image.png"
                   alt=""
@@ -871,9 +838,7 @@
             <div
               class="h-full flex items-start border-gray-800 border p-4 rounded-lg">
               <div class="flex-grow">
-                <h2 class="text-white title-font font-medium text-center">
-                  фрагодрочер
-                </h2>
+                <h2 class="title-font font-medium text-center">фрагодрочер</h2>
                 <img
                   src="https://cdn.discordapp.com/attachments/786601385939828759/1146364247186624562/image.png"
                   alt=""
@@ -889,7 +854,7 @@
             <div
               class="h-full flex items-start border-gray-800 border p-4 rounded-lg">
               <div class="flex-grow">
-                <h2 class="text-white title-font font-medium text-center">
+                <h2 class="title-font font-medium text-center">
                   весёлый фармер
                 </h2>
                 <img
@@ -906,13 +871,11 @@
             </div>
           </div>
 
-          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-type="siege">
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
             <div
               class="h-full flex items-start border-gray-800 border p-4 rounded-lg">
               <div class="flex-grow">
-                <h2 class="text-white title-font font-medium text-center">
-                  HP
-                </h2>
+                <h2 class="title-font font-medium text-center">HP</h2>
                 <img
                   src="https://cdn.discordapp.com/attachments/786601385939828759/1150341212163821618/image.png"
                   alt=""
@@ -1069,11 +1032,11 @@
             </div>
           </div>
           <div class="flex flex-wrap -m-2 justify-center">
-            <div class="p-2" data-type="t2">
+            <div class="p-2" data-tier="t2">
               <div
                 class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
                 <div class="flex-grow">
-                  <h2 class="text-white title-font font-medium text-center">
+                  <h2 class="title-font font-medium text-center">
                     Основная инкрустация для 2-ых узлов
                   </h2>
                   <img
@@ -1084,11 +1047,11 @@
               </div>
             </div>
 
-            <div class="p-2" data-type="siege">
+            <div class="p-2" data-tier="t3 t4">
               <div
                 class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
                 <div class="flex-grow">
-                  <h2 class="text-white title-font font-medium text-center">
+                  <h2 class="title-font font-medium text-center">
                     Основная инкрустация для осад без порезок по HP
                   </h2>
                   <img
@@ -1133,7 +1096,7 @@
 
           <div
             class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col"
-            data-type="siege">
+            data-tier="t3 t4">
             <div
               class="h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded text-green-400 bg-gray-800 flex-shrink-0 border-2 border-yellow-800">
               <img
@@ -1257,7 +1220,7 @@
           </div>
 
           <div
-            data-type="t1"
+            data-tier="t1 t2"
             class="flex items-center mx-auto lg:w-3/5 pb-10 mb-10 sm:flex-row flex-col">
             <div
               class="h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded text-green-400 bg-gray-800 flex-shrink-0 border-2 border-blue-800">
@@ -1276,7 +1239,7 @@
           </div>
 
           <div
-            data-type="siege"
+            data-tier="t3 t4"
             class="flex items-center mx-auto lg:w-3/5 mb-10 sm:flex-row flex-col">
             <div
               class="h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded text-green-400 bg-gray-800 flex-shrink-0 border-2 border-yellow-300">
@@ -1293,7 +1256,7 @@
           </div>
 
           <div
-            data-type="t1"
+            data-tier="t1 t2"
             class="flex items-center mx-auto lg:w-3/5 sm:flex-row flex-col">
             <div
               class="h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded text-green-400 bg-gray-800 flex-shrink-0 border-2 border-blue-800">
@@ -1325,9 +1288,7 @@
             </div>
           </div>
 
-          <div
-            data-type="all"
-            class="flex items-center mx-auto mb-10 sm:flex-row flex-col">
+          <div class="flex items-center mx-auto mb-10 sm:flex-row flex-col">
             <div
               class="h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded text-green-400 bg-gray-800 flex-shrink-0 border-2 border-yellow-300">
               <img
@@ -1349,8 +1310,8 @@
           </div>
 
           <div
-            data-type="siege"
-            class="flex items-center mx-auto mb-10 sm:flex-row flex-col">
+            class="flex items-center mx-auto mb-10 sm:flex-row flex-col"
+            data-tier="t3 t4">
             <div
               class="h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded text-green-400 bg-gray-800 flex-shrink-0 border-2 border-yellow-300">
               <img
@@ -1383,7 +1344,7 @@
           </div>
         </div>
         <div class="mx-auto flex gap-10 flex-wrap justify-center">
-          <div data-type="t3">
+          <div data-tier="t3">
             <h2 class="text-center mb-10 font-bold text-white">
               Минимальный гир для осад 3-ранга
             </h2>
@@ -1392,14 +1353,14 @@
               class="object-cover object-center"
               src="https://cdn.discordapp.com/attachments/786601385939828759/1154370233113514024/image.png" />
           </div>
-          <div data-type="t1">
+          <div data-tier="t1 t2">
             <h2 class="text-center mb-10 font-bold">гир для T1-2</h2>
             <img
               alt="ecommerce"
               class="object-cover object-center"
               src="https://cdn.discordapp.com/attachments/789813050352861215/1157758269352316999/30757bc76710eb07.png?ex=6519c5e9&is=65187469&hm=b4458624d3920c77be165ee0a91462015dd3fd7bda1e149e630a366a236e3f93&" />
           </div>
-          <div data-type="t3">
+          <div data-tier="t3">
             <h2 class="text-center mb-10 font-bold">
               Минимальный комфортный гир для осад 3-ранга
             </h2>
@@ -1409,7 +1370,7 @@
               src="https://cdn.discordapp.com/attachments/786601385939828759/1154376707168555018/image.png" />
           </div>
 
-          <div data-type="t3">
+          <div data-tier="t3 t4">
             <h2 class="text-center mb-10 font-bold">
               Комфортный гир для 3-4 ранга
             </h2>
@@ -1419,7 +1380,7 @@
               src="https://cdn.discordapp.com/attachments/789813050352861215/1156131468339322941/58c3b08d8770b731.png?ex=6513dad5&is=65128955&hm=cfc9212818491f433f26200f1d14493a2b3c295d239cd1254f3298291245331c&" />
           </div>
 
-          <div data-type="siege">
+          <div data-tier="t3 t4">
             <h2 class="text-center mb-10 font-bold">
               Забаф к которому стоит стремится
             </h2>
@@ -1445,8 +1406,9 @@
           </div>
         </div>
         <div class="mx-auto flex flex-wrap">
-          <ul class="list-none flex flex-wrap gap-4 justify-center">
-            <li class="flex items-center bg-gray-800 p-4 rounded w-max gap-2">
+          <ul class="list-none flex flex-wrap w-full gap-4 justify-center">
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap justify-center">
               Банки на HP/MP
               <img
                 src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000529.webp"
@@ -1460,11 +1422,9 @@
               <img
                 src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00040713.webp"
                 alt="" />
-              <img
-                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00001043.webp"
-                alt="" />
             </li>
-            <li class="flex items-center bg-gray-800 p-4 rounded w-max gap-2">
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap justify-center">
               Обеды
               <img
                 src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00009693.webp"
@@ -1473,7 +1433,8 @@
                 src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00009692.webp"
                 alt="" />
             </li>
-            <li class="flex items-center bg-gray-800 p-4 rounded w-max gap-2">
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap justify-center">
               Алхимка
               <img
                 src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000793.webp"
@@ -1485,22 +1446,23 @@
                 src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000636.webp"
                 alt="" />
             </li>
-            <li class="flex items-center bg-gray-800 p-4 rounded w-max gap-2">
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap justify-center">
               Карта
               <img
                 src="https://bdocodex.com/items/new_icon/03_etc/00016017.webp"
                 alt="" />
             </li>
             <li
-              data-type="nodewar"
-              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2">
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap justify-center">
               Обработанный камень
               <img
                 src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00004068.webp"
                 alt="" />
             </li>
 
-            <li class="flex items-center bg-gray-800 p-4 rounded w-max gap-2">
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap justify-center">
               Порошок чёрного камня
               <img
                 src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00004901.webp"
@@ -1508,7 +1470,8 @@
               <span class="text-gray-500">(субботняя осада только)</span>
             </li>
 
-            <li class="flex items-center bg-gray-800 p-4 rounded w-max gap-2">
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap justify-center">
               Зелье из жил кита
               <img
                 src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00000576.webp"
@@ -1518,27 +1481,31 @@
                 alt="" />
             </li>
 
-            <li class="flex items-center bg-gray-800 p-4 rounded w-max gap-2">
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap justify-center">
               Ловушки
               <img
                 src="https://bdocodex.com/items/new_icon/06_pc_equipitem/00_common/00_etc/00000202.webp"
                 alt="" />
             </li>
 
-            <li class="flex items-center bg-gray-800 p-4 rounded w-max gap-2">
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap justify-center">
               Топор Трины IV+
               <img
                 src="https://bdocodex.com/items/new_icon/06_pc_equipitem/00_common/00_etc/00016433.webp"
                 alt="" />
             </li>
 
-            <li class="flex items-center bg-gray-800 p-4 rounded w-max gap-2">
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap justify-center">
               Компас для осад на территории пустыни Валенсии
               <img
                 src="https://bdocodex.com/items/new_icon/03_etc/00016012.webp"
                 alt="" />
             </li>
-            <li class="flex items-center bg-gray-800 p-4 rounded w-max gap-2">
+            <li
+              class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap justify-center">
               [Мили] Слезы ветров
               <img
                 src="https://bdocodex.com/items/new_icon/09_cash/00017584.webp"
@@ -1549,44 +1516,6 @@
       </div>
     </section>
 
-    <script>
-      const copiedTitle = document.querySelectorAll(
-        'h2.text-white.title-font.font-medium'
-      );
-
-      copiedTitle.forEach((item) => {
-        item.classList.add('cursor-pointer');
-        item.addEventListener('click', async () => {
-          try {
-            // Копируем текст в буфер обмена
-            await navigator.clipboard.writeText(item.textContent);
-            item.classList.toggle('text-green-500');
-            // Можно также добавить обратную связь, например, вывести сообщение об успешном копировании
-            console.log('Текст скопирован: ' + item.textContent);
-          } catch (err) {
-            // В случае ошибки выводим сообщение или обрабатываем ошибку
-            console.error('Не удалось скопировать текст: ', err);
-          }
-        });
-      });
-
-      const toggleButtons = document.querySelectorAll('[data-toggle]');
-
-      function toggleElements(event) {
-        const { toggle } = event.target.dataset;
-
-        const elementsToToggle = document.querySelectorAll(
-          `[data-type="${toggle}"]`
-        );
-
-        elementsToToggle.forEach((element) => {
-          element.classList.toggle('hidden');
-        });
-      }
-
-      toggleButtons.forEach((button) => {
-        button.addEventListener('click', toggleElements);
-      });
-    </script>
+    <script src="./main.js"></script>
   </body>
 </html>

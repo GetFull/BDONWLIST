@@ -227,6 +227,36 @@
             </ul>
           </div>
 
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-tier="t4">
+            <ul class="border-gray-800 border p-4 rounded-lg">
+              <h2 class="title-font font-medium text-center">
+                Special Attack Evasion Rate +5%
+              </h2>
+              <li class="flex gap-2 items-center p-2 text-yellow-700 copy">
+                <img
+                  src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00009635.webp"
+                  alt=""
+                  class="border border-yellow-700" />
+                Special Kamasylvia Meal
+              </li>
+              <li class="flex gap-2 items-center p-2 text-yellow-500 copy">
+                <img
+                  src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00009464.webp"
+                  alt=""
+                  class="border border-yellow-500" />
+                Jumbo King of Jungle Hamburg
+              </li>
+
+              <li class="flex gap-2 items-center p-2 text-yellow-700 copy">
+                <img
+                  src="https://bdocodex.com/items/new_icon/03_etc/07_productmaterial/00009639.webp"
+                  alt=""
+                  class="border border-yellow-700" />
+                Special O'dyllita Meal
+              </li>
+            </ul>
+          </div>
+
           <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-tier="t3 t4">
             <div class="flex items-start border-gray-800 border p-4 rounded-lg">
               <img
@@ -294,7 +324,7 @@
             </div>
           </div>
 
-          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-tier="t3 t4">
             <div class="flex items-start border-gray-800 border p-4 rounded-lg">
               <img
                 alt="team"
@@ -658,7 +688,7 @@
             </div>
           </div>
 
-          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-tier="t3 t4">
             <div
               class="h-full flex items-start border-gray-800 border p-4 rounded-lg relative">
               <img
@@ -752,7 +782,7 @@
           </div>
         </div>
         <div class="flex flex-wrap -m-2 justify-center">
-          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-tier="t3 t4">
             <div
               class="h-full flex items-start border-gray-800 border p-4 rounded-lg">
               <div class="flex-grow">
@@ -1032,7 +1062,7 @@
           <div class="text-center mb-20">
             <h1
               class="sm:text-3xl text-2xl font-bold title-font text-white mb-4">
-              Покращення для кілець
+              Покращення для біжутерії
             </h1>
 
             <div class="flex mt-6 justify-center">
@@ -1384,9 +1414,6 @@
               <img
                 src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00040713.webp"
                 alt="" />
-              <img
-                src="https://bdocodex.com/items/new_icon/03_etc/08_potion/00001043.webp"
-                alt="" />
             </li>
             <li
               class="flex items-center bg-gray-800 p-4 rounded w-max gap-2 flex-wrap">
@@ -1480,55 +1507,6 @@
         </div>
       </div>
     </section>
-    <script>
-      const copiedTitle = document.querySelectorAll(
-        'h2.text-white.title-font.font-medium, .copy'
-      );
-
-      copiedTitle.forEach((item) => {
-        item.classList.add('cursor-pointer');
-        item.addEventListener('click', async () => {
-          try {
-            // Копируем текст в буфер обмена
-            await navigator.clipboard.writeText(item.textContent.trim());
-            item.classList.toggle('text-green-500');
-            // Можно также добавить обратную связь, например, вывести сообщение об успешном копировании
-            console.log('Текст скопирован: ' + item.textContent);
-          } catch (err) {
-            // В случае ошибки выводим сообщение или обрабатываем ошибку
-            console.error('Не удалось скопировать текст: ', err);
-          }
-        });
-      });
-
-      const toggleButtons = document.querySelectorAll('[data-toggle]');
-
-      function toggleElements(event) {
-        const { toggle } = event.target.dataset;
-
-        let elementsToToggle = document.querySelectorAll(`[data-tier]`);
-
-        elementsToToggle.forEach((element) => {
-          const elementAtr = element.getAttribute('data-tier').split(' ');
-          console.log(elementAtr);
-
-          const result = elementAtr.reduce(
-            (accumulator, currentValue) =>
-              accumulator +
-              document.querySelector(`[data-toggle="${currentValue}"`).checked,
-            0
-          );
-          console.log(result);
-
-          result
-            ? element.classList.remove('hidden')
-            : element.classList.add('hidden');
-        });
-      }
-
-      toggleButtons.forEach((button) => {
-        button.addEventListener('click', toggleElements);
-      });
-    </script>
+    <script src="./main.js"></script>
   </body>
 </html>
