@@ -1,6 +1,4 @@
-const clickableElements = document.querySelectorAll(
-  'h2.text-white.title-font.font-medium, .copy'
-);
+const clickableElements = document.querySelectorAll('[data-copy]');
 
 const handleItemClick = async (item) => {
   try {
